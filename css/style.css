@@ -22,6 +22,7 @@ a {
 .nav {
   display: flex;
   align-items: center;
+  justify-content: center;
   min-height: 80px;
 }
 
@@ -42,13 +43,53 @@ a {
 /* hero */
 
 .hero {
+  min-height: 600px;
   text-align: center;
+  background-color: aqua;
+  padding-top: 280px;
+}
+
+.hero .list {
+  font-weight: 900;
+  font-size: 44px;
+}
+
+.hero .order {
+  color: aliceblue;
+
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 40px;
+  background-color: #2196f3;
+  border-radius: 3px;
 }
 
 /* example */
 
 .example .ex {
   display: flex;
+  margin-top: 30px;
+}
+
+.example .ex li::before {
+  content: "";
+  display: block;
+  /* margin-bottom: 30px; */
+  height: 120px;
+  /* background-color: #f5f4fa; */
+}
+
+.ex .fish::before {
+  background-image: url(../img/2025627.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.ex .meat::before {
+  background-image: url(../img/burgerandpotatoes_87585.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .example li {
@@ -57,4 +98,30 @@ a {
 
 .example li:not(:last-child) {
   margin-right: 30px;
+}
+
+/* footer */
+.footer {
+  min-height: 200px;
+  background-color: #000000;
+}
+
+.address {
+  font-style: normal;
+}
+
+.footer .logo {
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.footer .list {
+  margin-top: 30px;
+}
+
+.address .contacts {
+  color: rgba(255, 255, 255, 0.6);
+}
+.address .tel {
+  margin-bottom: 10px;
 }
